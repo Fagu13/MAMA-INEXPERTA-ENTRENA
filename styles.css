@@ -1,0 +1,332 @@
+.layout {
+    width: 100%;
+    height: 100%;
+  
+    display: grid;
+    grid:
+      "header" auto
+      "main" 1fr
+      "slogan" auto
+      "Cursos" auto
+      "footer" auto
+      / 1fr;
+    }
+  
+  .header { grid-area: header; }
+  .main { grid-area: main;}
+  .slogan{grid-area: slogan;}
+  .Cursos{grid-area: Cursos;}
+  .footer { grid-area: footer; }
+
+  nav{
+    padding-left: 200px;
+  }
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    font-size: 20px;
+}
+
+nav li {
+    display: inline;
+    margin-right: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #eeafaf;
+    transition: color 0.3s; /* Transición para cambiar el color al pasar el cursor */
+}
+
+nav a:hover {
+    color: #9fdede; /* Cambia el color al pasar el cursor */
+}
+
+body {
+    margin: 2px; /* Elimina los márgenes predeterminados del body */
+    padding: 2px; /* Elimina el espacio de relleno predeterminado del body */
+}
+
+.main {
+    grid-area: main;
+}
+
+.slogan{
+    grid-area: slogan;
+    background-color:#eeafaf ;
+    
+    width: 100%;
+
+}
+
+
+#Cursos{
+    font-size: 2em;
+    text-align: center;
+    font-family: sans-serif;
+    font: bolder;
+    text-decoration: underline;
+
+
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.fa-shopping-bag{
+    color:#eeafaf;
+}
+.circle-icon {
+    display: inline-block;
+    width: 35px; /* Tamaño del círculo */
+    height: 35px;
+    background-color: #9fdede; /* Color del círculo */
+    border-radius: 50%; /* Hace que el elemento sea circular */
+    text-align: center;
+    line-height: 32px; /* Centra verticalmente el ícono */
+    margin-left: 5px; /* Espacio entre el ícono y el texto "Inicio de Sesión" */
+}
+
+.circle-icon i {
+    color: #fff; /* Color del ícono de usuario dentro del círculo */
+    font-size: 15px; /* Tamaño del ícono de usuario */
+}
+
+#titulo{
+    text-align: center;
+    color: black;
+    font-size: 3em;
+}
+
+#descripcion{
+    text-align: justify ;
+    color: white;
+}
+
+.imgIndex{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px; /* Puedes ajustar el valor según tu preferencia */
+
+}
+
+#slogan{
+    font-family: sans-serif;
+    font: bold;
+    text-align: center;
+}
+
+#imgCurso{
+    height: 35%;
+    width: auto; /* Usamos 'auto' para mantener la proporción de la imagen */
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px; /* Puedes ajustar el valor según tu preferencia */
+  transition: height 0.3s, filter 0.3s; /* Transiciones suaves para altura y filtro */
+}
+
+#imgCurso:hover {
+    height: 40%; /* Cambia la altura al 60% al pasar el cursor */
+    z-index: 1; /* Asegura que la imagen se muestre sobre otros elementos */
+}
+
+.button_slide {
+    color:#9fdede ;
+    border: 2px solid #eeafaf;
+    border-radius: 10px;
+    padding: 18px 36px;
+    display: inline-block;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 15px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #eeafaf;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+    
+  }
+  
+  
+  .slide_left:hover {
+    box-shadow: inset 0 0 0 50px #eeafaf;
+  }
+
+  .registrate{
+    text-align: center;
+    margin-top: 50px;
+    font-family: "Lucida Console",monospace;    
+
+  }
+  
+  .registrar{
+    top: 40px;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    text-transform: uppercase!important;
+    letter-spacing: 2px;
+    color: #9d3d3d;
+    cursor: pointer;
+    text-align: center;
+    text-transform: capitalize;
+    border: 1px solid #9d3d3d;
+    border-radius:50px;
+    position:relative;
+    overflow: hidden!important;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    background: transparent!important;
+    z-index:10;
+    display:inline-block; /* Hace que el botón sea en línea */
+    padding: 1rem 20rem; /* Ajusta el espaciado del botón según tus necesidades */
+    margin: 0 0 0 350px; /* Centra horizontalmente el botón */
+    line-height: 1; /* Alinea verticalmente el contenido */
+
+    
+}
+
+
+.registrar:hover{
+    border: 1px solid #071982;
+    color: #80ffd3!important;
+}
+.registrar::before {
+    content: '';
+    width: 0%;
+    height: 100%;
+    display: block;
+    background: #071982;
+    position: absolute;
+    -ms-transform: skewX(-20deg);
+    -webkit-transform: skewX(-20deg); 
+    transform: skewX(-20deg);   
+    left: -10%;
+    opacity: 1;
+    top: 0;
+    z-index: -12;
+    -moz-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+  -o-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+  -webkit-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+     box-shadow:2px 0px 14px rgba(0,0,0,.6);
+  } 
+
+.registrar::after {
+    content: '';
+    width: 0%;
+    height: 100%;
+    display: block;
+    background: #80ffd3;
+    position: absolute;
+  -ms-transform: skewX(-20deg);
+    -webkit-transform: skewX(-20deg); 
+    transform: skewX(-20deg);   
+    left: -10%;
+    opacity: 0;
+    top: 0;
+    z-index: -15;
+    -webkit-transition: all .94s cubic-bezier(.2,.95,.57,.99);
+    -moz-transition: all .4s cubic-bezier(.2,.95,.57,.99);
+    -o-transition: all .4s cubic-bezier(.2,.95,.57,.99);
+    transition: all .4s cubic-bezier(.2,.95,.57,.99);
+    box-shadow: 2px 0px 14px rgba(0,0,0,.6);
+}
+.registrar:hover::before, .registrar:hover::before{
+  opacity:1;
+  width: 116%;
+}
+.registrar:hover::after, .registrar:hover::after{
+  opacity:1;
+  width: 120%;
+}
+  
+  
+    
+  
+
+
+  /*form {
+  width: 340px;
+  height: 440px;
+  background: #e6e6e6;
+  border-radius: 8px;
+  box-shadow: 0 0 40px -10px #000;
+  margin: calc(50vh - 220px) auto;
+  padding: 20px 30px;
+  max-width: calc(100vw - 40px);
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+}
+h2 {
+  margin: 10px 0;
+  padding-bottom: 10px;
+  width: 180px;
+  color: #78788c;
+  border-bottom: 3px solid #78788c;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  font-family: "Montserrat", sans-serif;
+  transition: all 0.3s;
+  border-bottom: 2px solid #bebed2;
+}
+input:focus {
+  border-bottom: 2px solid #78788c;
+}
+p:before {
+  content: attr(type);
+  display: block;
+  margin: 28px 0 0;
+  font-size: 14px;
+  color: #5a5a5a;
+}
+button {
+  float: right;
+  padding: 8px 12px;
+  margin: 8px 0 0;
+  font-family: "Montserrat", sans-serif;
+  border: 2px solid #78788c;
+  background: 0;
+  color: #5a5a6e;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+button:hover {
+  background: #78788c;
+  color: #fff;
+}
+div {
+  content: "Hi";
+  position: absolute;
+  bottom: -15px;
+  right: -20px;
+  background: #50505a;
+  color: #fff;
+  width: 320px;
+  padding: 16px 4px 16px 0;
+  border-radius: 6px;
+  font-size: 13px;
+  box-shadow: 10px 10px 40px -14px #000;
+}
+span {
+  margin: 0 5px 0 15px;
+}
+*/
+
+  
+  
