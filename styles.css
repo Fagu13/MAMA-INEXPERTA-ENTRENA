@@ -8,6 +8,7 @@
       "main" 1fr
       "slogan" auto
       "Cursos" auto
+      "Formulario" auto
       "footer" auto
       / 1fr;
     }
@@ -16,6 +17,7 @@
   .main { grid-area: main;}
   .slogan{grid-area: slogan;}
   .Cursos{grid-area: Cursos;}
+  .Formulario { grid-area: Formulario; }
   .footer { grid-area: footer; }
 
   nav{
@@ -36,12 +38,12 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: #eeafaf;
+    color: #eeafaf ;
     transition: color 0.3s; /* Transición para cambiar el color al pasar el cursor */
 }
 
 nav a:hover {
-    color: #9fdede; /* Cambia el color al pasar el cursor */
+    color:#9fdede; /* Cambia el color al pasar el cursor */
 }
 
 body {
@@ -55,7 +57,7 @@ body {
 
 .slogan{
     grid-area: slogan;
-    background-color:#eeafaf ;
+    background-color:#9fdede ;
     
     width: 100%;
 
@@ -65,7 +67,7 @@ body {
 #Cursos{
     font-size: 2em;
     text-align: center;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
     font: bolder;
     text-decoration: underline;
 
@@ -99,30 +101,41 @@ body {
     text-align: center;
     color: black;
     font-size: 3em;
+    font-family:'Poppins', sans-serif;
 }
 
-#descripcion{
-    text-align: justify ;
+.slogan p{
+    text-align:justify ;
     color: white;
+    font-family:'Poppins', sans-serif;
+    font-size: 18px;
+    margin-top: -30px;
 }
 
-.imgIndex{
-    display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 10px; /* Puedes ajustar el valor según tu preferencia */
-
+#slogan_frase{
+  color: #eeafaf;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
 }
+
+.imgIndex {
+  display: block;
+  margin: 0 auto; /* Centra horizontalmente la imagen */
+  max-width: 80%; /* Ajusta el tamaño máximo al ancho del contenedor */
+  height: auto; /* Permite que la altura se ajuste automáticamente */
+  border-radius: 10px;
+}
+
 
 #slogan{
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
     font: bold;
     text-align: center;
 }
 
 #imgCurso{
     height: 35%;
-    width: auto; /* Usamos 'auto' para mantener la proporción de la imagen */
+    width: 25%; /* Usamos 'auto' para mantener la proporción de la imagen */
     display: block;
   margin-left: auto;
   margin-right: auto;
@@ -136,16 +149,16 @@ body {
 }
 
 .button_slide {
-    color:#9fdede ;
-    border: 2px solid #eeafaf;
+    color:#eeafaf;
+    border: 1px solid whitesmoke;
     border-radius: 10px;
     padding: 18px 36px;
     display: inline-block;
-    font-family: "Lucida Console", Monaco, monospace;
+    font-family: 'Poppins', sans-serif;
     font-size: 15px;
     letter-spacing: 1px;
     cursor: pointer;
-    box-shadow: inset 0 0 0 0 #eeafaf;
+    box-shadow: inset 0 0 0 0 #9fdede;
     -webkit-transition: ease-out 0.4s;
     -moz-transition: ease-out 0.4s;
     transition: ease-out 0.4s;
@@ -154,28 +167,29 @@ body {
   
   
   .slide_left:hover {
-    box-shadow: inset 0 0 0 50px #eeafaf;
+    box-shadow: inset 0 0 0 50px #9fdede;
+    color:whitesmoke;  
   }
 
   .registrate{
     text-align: center;
     margin-top: 50px;
-    font-family: "Lucida Console",monospace;    
+    font-family: 'Poppins', sans-serif;    
 
   }
   
   .registrar{
     top: 40px;
-    font-family: "proxima-nova", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 13px;
     text-transform: uppercase!important;
     letter-spacing: 2px;
-    color: #9d3d3d;
+    color:  #eeafaf;
     cursor: pointer;
     text-align: center;
     text-transform: capitalize;
-    border: 1px solid #9d3d3d;
+    border: 1px solid  #eeafaf;
     border-radius:50px;
     position:relative;
     overflow: hidden!important;
@@ -195,15 +209,15 @@ body {
 
 
 .registrar:hover{
-    border: 1px solid #071982;
-    color: #80ffd3!important;
+    border: 1px solid #9fdede;
+    color: whitesmoke!important;
 }
 .registrar::before {
     content: '';
     width: 0%;
     height: 100%;
     display: block;
-    background: #071982;
+    background: #9fdede;
     position: absolute;
     -ms-transform: skewX(-20deg);
     -webkit-transform: skewX(-20deg); 
@@ -224,7 +238,7 @@ body {
     width: 0%;
     height: 100%;
     display: block;
-    background: #80ffd3;
+    background: #eeafaf;
     position: absolute;
   -ms-transform: skewX(-20deg);
     -webkit-transform: skewX(-20deg); 
@@ -253,9 +267,122 @@ body {
   
 
 
-  /*form {
-  width: 340px;
-  height: 440px;
+form {
+  width: 510px; /* Ajustado: 340px * 1.5 */
+  height: 660px; /* Ajustado: 440px * 1.5 */
+  background: #e6e6e6;
+  border-radius: 8px;
+  box-shadow: 0 0 40px -10px #000;
+  margin: calc(50vh - 330px) auto; /* Ajustado: 220px * 1.5 */
+  padding: 30px 45px; /* Ajustado: 20px * 1.5, 30px * 1.5 */
+  max-width: calc(100vw - 60px); /* Ajustado: 40px * 1.5 */
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+
+form h2 {
+  margin: 15px 0; /* Ajustado: 10px * 1.5 */
+  padding-bottom: 15px; /* Ajustado: 10px * 1.5 */
+  width: 270px; /* Ajustado: 180px * 1.5 */
+  color: #78788c;
+  border-bottom: 4.5px solid #78788c; /* Ajustado: 3px * 1.5 */
+}
+
+input {
+  width: 100%;
+  padding: 15px; /* Ajustado: 10px * 1.5 */
+  box-sizing: border-box;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s;
+  border-bottom: 3px solid #bebed2; /* Ajustado: 2px * 1.5 */
+}
+
+input:focus {
+  border-bottom: 3px solid #78788c; /* Ajustado: 2px * 1.5 */
+}
+
+p:before {
+  content: attr(type);
+  display: block;
+  margin: 42px 0 0; /* Ajustado: 28px * 1.5 */
+  font-size: 21px; /* Ajustado: 14px * 1.5 */
+  color: #5a5a5a;
+}
+
+form button {
+  float: right;
+  padding: 12px 18px; /* Ajustado: 8px * 1.5, 12px * 1.5 */
+  margin: 12px 0 0; /* Ajustado: 8px * 1.5 */
+  font-family: 'Poppins', sans-serif;
+  border: 3px solid #78788c; /* Ajustado: 2px * 1.5 */
+  background: 0;
+  color: #5a5a6e;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background: #78788c;
+  color: #fff;
+}
+
+span {
+  margin: 0 7.5px 0 22.5px; /* Ajustado: 0 5px 0 15px * 1.5 */
+}
+
+.footer  {
+  font-family:'Poppins', sans-serif;
+  color: #000;
+  text-align: center;
+}
+
+.redes-sociales i {
+  display: inline-block;
+  margin-right: 40px; /* Espaciado entre iconos, ajusta según sea necesario */
+  text-align: center;
+}
+
+.redes-sociales .fa-instagram {
+  color: #e4405f; /* Color para Instagram */
+  font-size: 2.2em; /* Tamaño para Instagram */
+}
+
+.redes-sociales .fa-youtube {
+  color: #ff0000; /* Color para YouTube */
+  font-size: 2.5em; /* Tamaño para YouTube */
+}
+
+.redes-sociales .fa-tiktok {
+  color: #69c9d0; /* Color para TikTok */
+  font-size: 2em; /* Tamaño para TikTok */
+}
+
+.Copyright {
+margin-top: auto;
+font-size: 15px;
+text-align: center;
+font-family:'Poppins', sans-serif;
+}
+
+/* SECCION CONTACTO */
+
+.Contacto{
+  font-family:'Poppins', sans-serif;
+  text-align: center;
+  font-size: 30px;
+  color: #eeafaf;
+  margin-bottom: -150px;
+
+}
+
+.form_contacto {
+  width: 1000px;
+  height: 600px;
   background: #e6e6e6;
   border-radius: 8px;
   box-shadow: 0 0 40px -10px #000;
@@ -263,10 +390,12 @@ body {
   padding: 20px 30px;
   max-width: calc(100vw - 40px);
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family:'Poppins', sans-serif;
   position: relative;
+  margin-bottom: auto;
+
 }
-h2 {
+ .contacto h2 {
   margin: 10px 0;
   padding-bottom: 10px;
   width: 180px;
@@ -281,7 +410,7 @@ input {
   outline: none;
   resize: none;
   border: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family:'Poppins', sans-serif;
   transition: all 0.3s;
   border-bottom: 2px solid #bebed2;
 }
@@ -295,11 +424,11 @@ p:before {
   font-size: 14px;
   color: #5a5a5a;
 }
-button {
+.contacto button {
   float: right;
   padding: 8px 12px;
   margin: 8px 0 0;
-  font-family: "Montserrat", sans-serif;
+  font-family:'Poppins', sans-serif;
   border: 2px solid #78788c;
   background: 0;
   color: #5a5a6e;
@@ -310,23 +439,8 @@ button:hover {
   background: #78788c;
   color: #fff;
 }
-div {
-  content: "Hi";
-  position: absolute;
-  bottom: -15px;
-  right: -20px;
-  background: #50505a;
-  color: #fff;
-  width: 320px;
-  padding: 16px 4px 16px 0;
-  border-radius: 6px;
-  font-size: 13px;
-  box-shadow: 10px 10px 40px -14px #000;
-}
 span {
   margin: 0 5px 0 15px;
 }
-*/
 
-  
   
