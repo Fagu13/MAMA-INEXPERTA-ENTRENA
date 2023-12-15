@@ -20,6 +20,11 @@
   .Formulario { grid-area: Formulario; }
   .footer { grid-area: footer; }
 
+  img{ 
+    max-width: 100%;
+    height: auto;
+  }
+
   nav{
     padding-left: 200px;
   }
@@ -58,10 +63,31 @@ body {
 .slogan{
     grid-area: slogan;
     background-color:#9fdede ;
-    
+    text-align: center;
     width: 100%;
 
 }
+
+.boton-info {
+  border-radius: 15px; /* Ajusta el valor según tus preferencias */
+  padding: 10px 20px; /* Ajusta el relleno según tus preferencias */
+  font-size: 16px; /* Ajusta el tamaño del texto según tus preferencias */
+  background-color: #eeafaf; /* Ajusta el color de fondo según tus preferencias */
+  color: #ffffff; /* Ajusta el color del texto según tus preferencias */
+  border: none; /* Elimina el borde del botón */
+  cursor: pointer;
+  margin-bottom: 40px;
+  margin-top: 15px;
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+.enlace-boton{
+  text-decoration: none;
+  color: #fff;
+
+}
+
 
 
 #Cursos{
@@ -352,16 +378,14 @@ span {
   font-size: 2.2em; /* Tamaño para Instagram */
 }
 
-.redes-sociales .fa-youtube {
-  color: #ff0000; /* Color para YouTube */
-  font-size: 2.5em; /* Tamaño para YouTube */
-}
-
+/*.redes-sociales .fa-youtube {
+  color: #ff0000; /* Color para YouTube 
+  font-size: 2.5em; /* Tamaño para YouTube 
+}*/
 .redes-sociales .fa-tiktok {
   color: #69c9d0; /* Color para TikTok */
-  font-size: 2em; /* Tamaño para TikTok */
-}
-
+  font-size: 2em; /* Tamaño para TikTok */ 
+} 
 .Copyright {
 margin-top: auto;
 font-size: 15px;
@@ -443,4 +467,46 @@ span {
   margin: 0 5px 0 15px;
 }
 
-  
+ /* SOBRE MI */
+ 
+ 
+.texto-sobreMi{
+  width: 878px;
+  font-family:'Poppins', sans-serif;
+  padding-top: 25px;
+  margin-left: 20px;
+  margin-top: -10px;
+
+}
+.texto-sobreMi h3{
+  color: #eeafaf;
+  text-align: center;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.mySlides img {
+  border-radius: 10px;
+}
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
