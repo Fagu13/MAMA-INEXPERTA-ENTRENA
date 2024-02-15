@@ -13,24 +13,29 @@
 <body>
     <section class="layout">
         <div class="header">
-            <nav>
-                <ul>
+            <nav class="navbar">
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <ul class="nav-list">
                     <li><a class="button_slide slide_left" href="index.html">INICIO</a></li>
                     <li><a class="button_slide slide_left" href="sobremi.html">SOBRE MI</a></li>
                     <li><a class="button_slide slide_left" href="contacto.html">CONTACTO</a></li>
-                    <li><a class="button_slide slide_left" href="#">CURSO</a></li>
+                    <li><a class="button_slide slide_left" href="cursos.html">CURSO</a></li>
                     <li>
-                        <i class="fas fa-shopping-bag"></i> <!-- Ícono de bolsa de compras -->
-                        <a href="#">SHOP</a>
+                        <i class="fas fa-shopping-bag"></i>
+                        <a href="shop.html">SHOP</a>
                     </li>
                     <li>
                         <a href="#"></a>
                         <span class="circle-icon">
-                           <a href="#"><i class="fas fa-user-circle"></i></a> <!-- Ícono de usuario en círculo -->
+                            <a href="login.html"><i class="fas fa-user-circle"></i></a>
                         </span>
                     </li>
                 </ul>
-              </nav>
+            </nav>
         </div>  
         <div class="main">
             <h1 id="titulo"> TINI MAMI FIT</h1>
@@ -44,15 +49,14 @@
                 a pleno.
                 <h2 id="slogan_frase">SE TU MEJOR VERSION</h2>
                 <button class="boton-info">
-                    <a href="#" class="enlace-boton">LA IMPORTACIA DEL EJERCICIO POST PARTO</a></button>
+                    <a href="ej_postarto.html" class="enlace-boton">LA IMPORTACIA DEL EJERCICIO POST PARTO</a></button>
             </p>
         </div>
         <div class="Cursos">
             <p id="Cursos">NUESTROS CURSOS</p>
-           <a href="#"><img id="imgCurso" class="img.Zoom" src="images/cursos.jpg" alt="Nuestro curso"></a>
+           <a href="cursos.html"><img id="imgCurso" class="img.Zoom" src="images/cursos.jpg" alt="Nuestro curso"></a>
            <h3 class="registrate">REGISTRATE Y TENE ACCESO AL CURSO QUE QUIERAS DONDE QUIERAS CUANDO QUIERAS</h3>
-           <button class="registrar">REGISTRATE</button> 
-           <a href="#"></a>   
+           <a href="registrarse.html"><button class="registrar">REGISTRATE</button></a>     
         </div>
         <div class="Formulario">
           <form class="form">
@@ -73,7 +77,7 @@
             <div class="redes-sociales">
                <a href="https://www.instagram.com/soytinimamifit/"><i class="fab fa-instagram"></i></a>
                <!-- <a href="#"><i class="fab fa-youtube"></i></a> -->
-               <a href="#"><i class="fab fa-tiktok"></i></a>
+               <a href="https://www.tiktok.com/@soymamifit?_t=8j5QQ5uPWf0&_r=1"><i class="fab fa-tiktok"></i></a>
             </div>
             <div class="Copyright">
                <p><i class="fas fa-copyright"></i>TODOS LOS DERECHOS RESERVADOS 2023</p>
@@ -81,5 +85,6 @@
         </div>
     </section>
 </body>
+<script defer src="efectos.js"></script>
 </html>
 

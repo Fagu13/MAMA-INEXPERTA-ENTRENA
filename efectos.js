@@ -12,3 +12,11 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";
   setTimeout(showSlides, 3500); // Change image every 2 seconds
 } 
+
+//PRUEBA BARRA
+
+function toggleMenu() {
+  const navList = document.querySelector('.nav-list');
+  navList.classList.toggle('show');
+}
+

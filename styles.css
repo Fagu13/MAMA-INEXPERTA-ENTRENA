@@ -45,6 +45,7 @@ nav a {
     text-decoration: none;
     color: #eeafaf ;
     transition: color 0.3s; /* Transición para cambiar el color al pasar el cursor */
+    font-family: 'Poppins', sans-serif;
 }
 
 nav a:hover {
@@ -106,6 +107,7 @@ body {
 
 .fa-shopping-bag{
     color:#eeafaf;
+    margin-top: 20px;
 }
 .circle-icon {
     display: inline-block;
@@ -116,6 +118,7 @@ body {
     text-align: center;
     line-height: 32px; /* Centra verticalmente el ícono */
     margin-left: 5px; /* Espacio entre el ícono y el texto "Inicio de Sesión" */
+    margin-top: 13px;
 }
 
 .circle-icon i {
@@ -238,6 +241,10 @@ body {
     border: 1px solid #9fdede;
     color: whitesmoke!important;
 }
+.registrar:hover a {
+  color: whitesmoke !important;
+}
+
 .registrar::before {
     content: '';
     width: 0%;
@@ -287,6 +294,14 @@ body {
   opacity:1;
   width: 120%;
 }
+
+.registrar a {
+  text-decoration: none;
+  color: #eeafaf; 
+  transition: color 0.3s ease-in-out; /* Añade una transición suave al cambio de color */
+}
+
+
   
   
     
@@ -441,6 +456,7 @@ font-family:'Poppins', sans-serif;
     padding: 1rem 2rem; 
     margin: 0 0 0 20px; 
   }
+  
 
   form {
     width: 100%; 
@@ -464,8 +480,14 @@ font-family:'Poppins', sans-serif;
   }
     /* SOBRE MI*/
 
+    .container {
+      
+    }
+
     .texto-sobreMi {
       padding: 10px; /* Ajustar el relleno para pantallas más pequeñas */
+      font-size: 10px;
+      margin: 0 auto;
     }
   
     .slideshow-container {
@@ -480,6 +502,18 @@ font-family:'Poppins', sans-serif;
     @keyframes fade {
       from { opacity: 0.2; }
       to { opacity: 1; }
+    }
+
+    /*EJERCICIO POSTPARTO*/
+
+    .texto-postparto {
+      margin-left: 5px;
+      margin-right: 5px;
+      font-size: 10px;
+      text-align: auto;
+    }
+    .texto-postparto p {
+      margin-right: 350px;
     }
   }
 
@@ -502,7 +536,6 @@ font-family:'Poppins', sans-serif;
   }
   nav ul {
     display: flex;
-    flex-direction: column;
     align-items: center;
   }
 
@@ -570,6 +603,13 @@ font-family:'Poppins', sans-serif;
   @keyframes fade {
     from { opacity: 0.2; }
     to { opacity: 1; }
+  }
+
+  /*EJERCICIO POSTPARTO*/
+
+  .texto-postparto {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
 }
@@ -593,7 +633,6 @@ font-family:'Poppins', sans-serif;
 
   nav ul {
     display: flex;
-    flex-direction: column;
     align-items: center;
   }
 
@@ -661,6 +700,13 @@ font-family:'Poppins', sans-serif;
   @keyframes fade {
     from { opacity: 0.2; }
     to { opacity: 1; }
+  }
+
+  /*EJERCIO POSTPARTO*/
+
+  .texto-postparto {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
 }
@@ -684,7 +730,6 @@ font-family:'Poppins', sans-serif;
 
   nav ul {
     display: flex;
-    flex-direction: column;
     align-items: center;
   }
 
@@ -752,6 +797,13 @@ font-family:'Poppins', sans-serif;
   @keyframes fade {
     from { opacity: 0.2; }
     to { opacity: 1; }
+  }
+
+  /*EJERCICIO POSTPARTO*/
+
+  .texto-postparto {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
 }
@@ -829,6 +881,11 @@ font-family:'Poppins', sans-serif;
 
   .texto-sobreMi {
     padding: 10px; /* Ajustar el relleno para pantallas más pequeñas */
+    font-size: 8.3px;
+  }
+
+  .texto-sobreMi h3{
+    margin-left: -500px;
   }
 
   .slideshow-container {
@@ -843,6 +900,13 @@ font-family:'Poppins', sans-serif;
   @keyframes fade {
     from { opacity: 0.2; }
     to { opacity: 1; }
+  }
+
+  /*EJERCICIO POSTPARTO*/
+
+  .texto-postparto {
+    margin-left: 5px;
+    margin-right: 5px;
   }
 
 }
@@ -916,6 +980,8 @@ font-family:'Poppins', sans-serif;
     margin: 20px auto; 
   }
 
+  
+
   /* SOBRE MI*/
 
   .texto-sobreMi {
@@ -934,6 +1000,22 @@ font-family:'Poppins', sans-serif;
   @keyframes fade {
     from { opacity: 0.2; }
     to { opacity: 1; }
+  }
+
+  /* EJERCICIO POSTPARTO*/
+
+  .texto-postparto {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 10px;
+    text-align: auto;
+  }
+  .texto-postparto p {
+    margin-right: 350;
+  }
+
+  .accordion{
+    margin-right: 350px;
   }
 
 }
@@ -1058,5 +1140,392 @@ span {
 }
 
 
+/*BARRA MOVILES*/
 
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #fff;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-icon {
+  cursor: pointer;
+  display: none;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 5px 0;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: left;    
+}
+
+.nav-list li {
+  margin-right: 20px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #eeafaf;
+  font-family: 'Poppins', sans-serif;
+}
+
+/*Responsibe movile*/
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+        margin-right: auto;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: auto;
+        width: 100%;
+        background-color: grey;
+        padding-left: 0;
+    }
+
+    .nav-list.show {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 20px;
+    }
+
+    .nav-list li {
+        margin: 0;
+        border: none;
+    }
+
+    .nav-list a {
+        text-decoration: none;
+        color: #eeafaf;
+        font-family: 'Poppins', sans-serif;
+        padding: 10px 0;
+        display: block;
+        transition: background-color 0.3s;
+        border: none;
+    }
+
+    .Formulario{
+      margin-top: 50px;
+    }
+
+}
+
+/*EJERCICIO POSTPARTO*/
+
+.texto-postparto{
+
+  text-align: justify;
+  margin-top: 75px;
+  margin-bottom: 75px;
+  margin-left: 100px;
+  margin-right: 100px;
+  font-family: 'Poppins', sans-serif;
+
+}
+.texto-postparto h1 {
+
+  text-align: auto ;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+/* Acordeon */
+
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400&display=swap');
+
+:root {
+  --bg: #fff;
+  --text: #7288a2;
+  --gray: #4d5974;
+  --lightgray: #e5e5e5;
+  --blue: #9fdede;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+.container-acordeon {
+  margin: 0 auto;
+  padding: 4rem;
+  width: 48rem;
+}
+
+.accordion .accordion-item {
+  border-bottom: 1px solid var(--lightgray);
+}
+
+.accordion button[aria-expanded='true'] {
+  border-bottom: 1px solid var(--blue);
+}
+
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color: var(--text);
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.accordion button:hover,
+.accordion button:focus {
+  cursor: pointer;
+  color: var(--blue);
+}
+
+.accordion button:hover::after,
+.accordion button:focus::after {
+  cursor: pointer;
+  color: var(--blue);
+  border: 1px solid var(--blue);
+}
+
+.accordion .accordion-title {
+  padding: 1em 1.5em 1em 0;
+}
+
+.accordion .icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+
+.accordion .icon::before {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+
+.accordion .icon::after {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+
+.accordion button[aria-expanded='true'] {
+  color: var(--blue);
+}
+
+.accordion button[aria-expanded='true'] .icon::after {
+  width: 0;
+}
+
+.accordion button[aria-expanded='true'] + .accordion-content {
+  opacity: 1;
+  max-height: 9em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+
+.accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+
+.accordion .accordion-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 2em 0;
+  font-family: 'Poppins', sans-serif;
+
+}
+@media (max-width: 768px) {
+  .accordion-title{
+    font-size: 15px;
+  }
+
+  .accordion .accordion-content p {
+    font-size: 10px;
+    font-weight: 300;
+    margin: 2em 0;
+    font-family: 'Poppins', sans-serif;
+  
+}
+}
+
+
+/* REGISTRARSE*/
+
+.pg_Registro{
+  background-color: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.register-form {
+  max-width: 500px;
+  margin: auto;
+  background-color: #ffffff;
+}
+
+
+
+
+.input-container {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+  padding-top: 20px;
+}
+
+.icon {
+  padding: 10px;
+  background:  #eeafaf;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid #9fdede ;
+}
+
+.btn {
+  background-color: #9fdede;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+/*CURSO*/
+
+.texto-curso{
+
+  text-align: justify;
+  margin-top: 75px;
+  margin-bottom: 75px;
+  margin-left: 100px;
+  margin-right: 100px;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.8;
+
+}
+.texto-curso h1 {
+
+  text-align: auto ;
+  font-family: 'Poppins', sans-serif;
+  
+
+}
+
+/*Imagenes Curso*/
+
+ /* Three image containers (use 25% for four, and 50% for two, etc) */
+ .column-imgcurso {
+  float: left;
+  width: 33.33%;
+  padding: 30px;
+}
+
+.imgcurso{
+  border-radius: 10px;
+}
+
+/* Clear floats after image containers */
+.row-curso::after {
+  content: "";
+  clear: both;
+  display: table;
+} 
+
+.vinieta{
+  list-style: disc; 
+}
+
+.buttonCompra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0; /* Ajusta el relleno según sea necesario */
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #eeafaf;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.buttonCompra:hover {
+  background-color: #afc4ee;
+}
+
+.buttonCompra:active {
+  background-color: #afc4ee;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/* Elimina el estilo específico para el enlace dentro del botón */
+.buttonCompra a {
+  text-decoration: none;
+  color: inherit; /* Hereda el color del texto del botón */
+}
 
