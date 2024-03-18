@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Botón de WhatsApp</title>
+</head>
+<body>
+
+<!-- Botón que al hacer clic abrirá WhatsApp -->
+<button id="whatsappButton">Abrir WhatsApp</button>
+
+<script>
+document.getElementById("whatsappButton").addEventListener("click", function() {
+  // Número de teléfono al que quieres enviar el mensaje (debe incluir el código de país)
+  var phoneNumber = "+5401133526667"; // Reemplaza esto con tu número de WhatsApp
+
+  // Mensaje que deseas enviar
+  var message = encodeURIComponent("Muchas gracias por contactarme, nos comunicaremos a la brevedad");
+
+  // Genera el enlace con el número y el mensaje
+  var whatsappLink = "https://wa.me/" + phoneNumber + "?text=" + message;
+
+  // Abre la ventana de WhatsApp
+  window.location.href = whatsappLink;
+});
+</script>
+
+</body>
+</html>
